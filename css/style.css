@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  /* background */
+  --c-light: #fcfdff;
+  --c-orange: #f2bb21;
+  --c-yellow: #fdf2d1;
+  --c-blue: #b4d7fd;
+  --c-green: #97dbbe;
+  --c-light-green: #d4f1e5;
+
+  /* text */
+  --txt-c-dark-grey: #2d3436;
+  --txt-c-light-grey: #636e72;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  height: 100px;
+  position: relative;
+}
+.col-6 {
+  display: flex;
+}
+.company {
+}
+.company__name {
+  position: absolute;
+  top: 50%;
+}
+.company__name h3 {
+  color: black;
+  font-size: 18px;
+  line-height: 21px;
+}
+.company__name h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+/* .company-info__name {
+    position: absolute;
+    top: 50%;
+} */
+
+.company__contacts a {
+  text-decoration: none;
+  color: var(--txt-c-light-grey);
+}
+.company__contacts a:hover {
+  text-decoration: none;
+  color: var(--txt-c-light-grey);
+}
+.company__contacts button {
+  /* padding: 15px 25px; */
+}
+.company__contacts img {
+  padding-right: 10px;
+}
+#tel-btn {
+  border: 1px solid var(--c-orange);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
