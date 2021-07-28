@@ -19,34 +19,51 @@
   font-weight: 400;
 }
 
-header {
+.container h1 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+}
+.container h2 {
+  margin-top: 200px;
+  color: var(--txt-c-light-grey);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.container h3 {
+  color: black;
+  font-size: 18px;
+  line-height: 21px;
+}
+.container h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.container p {
+  width: 360px;
+  color: var(--txt-c-light-grey);
+  font-size: 14px;
+  line-height: 150%;
+}
+.container hr {
+  height: 3px;
+  margin: 30px 0;
+  width: 98px;
+  color: var(--c-green);
+}
+.company {
   height: 100px;
-  position: relative;
 }
 .col-6 {
   display: flex;
 }
 
-.company__name {
-  position: absolute;
-  top: 50%;
-}
-.company__name h3 {
-  color: black;
-  font-size: 18px;
-  line-height: 21px;
-}
-.company__name h4 {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-}
-/* .company-info__name {
-    position: absolute;
-    top: 50%;
-} */
-
 .company__contacts a {
+  display: flex;
   text-decoration: none;
   color: var(--txt-c-light-grey);
 }
@@ -55,10 +72,11 @@ header {
   color: var(--txt-c-light-grey);
 }
 .company__contacts button {
-  /* padding: 15px 25px; */
+  padding: 15px 25px;
+  margin-left: 20px;
 }
-.company__contacts img {
-  padding-right: 10px;
+.company img {
+  margin-right: 10px;
 }
 #tel-btn {
   border: 1px solid var(--c-orange);
@@ -66,4 +84,39 @@ header {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
+}
+.specialty {
+  height: 100%;
+}
+.specialty img {
+  margin: 0;
+  margin: 0;
+}
+#photo-col {
+  width: 41%;
+  padding: 0;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  color: var(--c-green);
+  margin-top: 120px;
+}
+.main-btn {
+  margin-top: 15px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 22px 59px;
+  background-color: var(--c-orange);
+  color: var(--c-light);
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.main-btn:hover {
+  color: var(--c-light);
 }
