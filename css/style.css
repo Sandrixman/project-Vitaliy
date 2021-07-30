@@ -18,6 +18,10 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+.photo-border {
+  border-radius: 7%;
+  border: none;
+}
 
 .container h1 {
   font-weight: bold;
@@ -25,6 +29,11 @@
   line-height: 47px;
 }
 .container h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.container h3 {
   margin-top: 200px;
   color: var(--txt-c-light-grey);
   font-weight: 500;
@@ -33,12 +42,12 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-.container h3 {
+.container h4 {
   color: black;
   font-size: 18px;
   line-height: 21px;
 }
-.container h4 {
+.container h5 {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -88,19 +97,70 @@
 .specialty {
   height: 100%;
 }
-.specialty img {
-  margin: 0;
-  margin: 0;
-}
-#photo-col {
-  width: 41%;
+
+.photo-col {
+  width: 473px;
   padding: 0;
 }
-.logo {
-  width: 40px;
-  height: 40px;
-  color: var(--c-green);
+#photo1 {
+  display: flex;
+  justify-content: flex-end;
+}
+#photo1 img {
+  margin-left: 10px;
+}
+#photo2 {
+  display: -webkit-box;
+}
+#photo2 img:last-child {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#photo3 {
+  margin-left: -30px;
+  display: -webkit-box;
+}
+#photo3 img {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.col-2 {
+  align-self: flex-end;
+  height: 530px;
+}
+.col-2 img {
+  margin-bottom: 19px;
+}
+.network {
+  position: relative;
   margin-top: 120px;
+  margin-bottom: 100px;
+  display: flex;
+}
+.network__logo {
+  margin-right: 20px;
+}
+.network a {
+  display: contents;
+  text-decoration: none;
+}
+.facebook {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -8px;
+}
+.twiter {
+  position: absolute;
+  top: 50%;
+  left: 72px;
+  margin-top: -8px;
+}
+.youtube {
+  position: absolute;
+  top: 50%;
+  left: 132px;
+  margin-top: -8px;
 }
 .main-btn {
   margin-top: 15px;
@@ -119,4 +179,13 @@
 }
 .main-btn:hover {
   color: var(--c-light);
+}
+
+.specialty-info p {
+  width: 520px;
+  align-self: center;
+}
+.vector {
+  display: grid;
+  margin-top: 40px;
 }
