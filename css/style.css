@@ -22,7 +22,10 @@
   border-radius: 7%;
   border: none;
 }
-
+.container {
+  max-width: 1140px;
+  margin-bottom: 80px;
+}
 .container h1 {
   font-weight: bold;
   font-size: 40px;
@@ -32,15 +35,18 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
 }
 .container h3 {
-  margin-top: 200px;
   color: var(--txt-c-light-grey);
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+.specialty h3 {
+  margin-top: 200px;
 }
 .container h4 {
   color: black;
@@ -51,6 +57,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+}
+.container h6 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
 }
 .container p {
   width: 360px;
@@ -84,8 +95,12 @@
   padding: 15px 25px;
   margin-left: 20px;
 }
-.company img {
+.btn img,
+.company__logo-wrapper {
   margin-right: 10px;
+}
+.company__logo {
+  width: 100%;
 }
 #tel-btn {
   border: 1px solid var(--c-orange);
@@ -181,11 +196,64 @@
   color: var(--c-light);
 }
 
+.specialty-info img {
+  border-radius: 10px;
+}
 .specialty-info p {
   width: 520px;
   align-self: center;
+  margin: 0;
 }
 .vector {
   display: grid;
   margin-top: 40px;
+}
+.margin {
+  margin-top: 40px;
+}
+.margin-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.padding-80 {
+  padding-top: 80px;
+  padding-bottom: 65px;
+}
+.students-info {
+  display: flex;
+  justify-content: center;
+}
+.students h3,
+h6 {
+  width: 120px;
+  text-align: left;
+  margin-left: 20px;
+}
+.ellipse {
+  margin: 30px 80px;
+}
+sup {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 5px;
+}
+.study p {
+  width: 519px;
+  align-self: center;
+  text-align: left;
+}
+.partners-info {
+  display: flex;
+  justify-content: space-between;
+}
+.perspectives .col-6 {
+  display: flex;
+  justify-content: center;
+}
+.perspectives li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 250%;
+  color: var(--txt-c-light-grey);
 }
