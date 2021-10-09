@@ -5,256 +5,412 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Хмельницький політехнічний фаховий коледж</title>
 </head>
 
 <body>
-    <header class="container">
-        <div class="company row align-items-center">
-            <div class="col-6 align-items-center">
-                <div class="company__logo-wrapper">
-                    <img class="company__logo" src="img/HPK_herb-Logon.png" alt="logo">
+    <header>
+        <div class="container">
+            <div class="company-header">
+                <div class="company-header__left-box">
+                    <div class="company-header__logo">
+                        <img src="img/HPK_herb-Logon.png" alt="logo">
+                    </div>
+                    <div class="company-header__name">
+                        <h4>Хмельницький політехнічний фаховий коледж</h4>
+                        <h5>Національного університету "Львівська політехніка</h5>
+                    </div>
                 </div>
-                <div class="company__name">
-                    <h4>Хмельницький політехнічний фаховий коледж</h4>
-                    <h5>Національного університету "Львівська політехніка</h5>
+                <div class="company-header__right-box">
+                    <div class="company-header__contacts">
+                        <a href="tel:+3 8098 890 98 89">+3 8098 890 98 89</a>
+                        <a href="mailto:mail.admin@hpk.edu.ua">mail.admin@hpk.edu.ua</a>
+                    </div>
+                    <button class="company-header__btn" id="tel-btn" href="">
+                        <img src="img/tel-icon.png" alt="">подзвонити
+                    </button>
                 </div>
-            </div>
-            <div class="col-6 justify-content-end company__contacts">
-                <div>
-                    <a class="justify-content-end" href="tel:+3 8098 890 98 89">+3 8098 890 98 89</a>
-                    <a href="mailto:mail.admin@hpk.edu.ua">mail.admin@hpk.edu.ua</a>
-                </div>
-                <button class="btn" id="tel-btn" href="">
-                    <img src="img/tel-icon.png" alt="">подзвонити
-                </button>
             </div>
         </div>
     </header>
-    <section class="container specialty">
-        <div class="row">
-            <div class="col-5">
-                <h3>Спеціальність 121</h3>
-                <h1>Інженерія програмного забезпечення</h1>
-                <hr>
-                <p>Сучасна спеціальність, орієнтована на розробку алгоритмічного та програмного забезпечення, яке
-                    задовольняє поставленим
-                    вимогам та побажанням замовника</p>
-                <a class="main-btn">дізнатись більше</a>
-                <div class="network">
-                    <div class="network__logo">
-                        <a href="">
-                            <img class="facebook" src="img/facebook.png" alt="">
-                            <img src="img/Ellipse.png" alt="">
-                        </a>
+
+    <section class="specialty">
+        <div class="container">
+            <div class="specialty__box">
+                <div class="specialty__info">
+                    <h3>Спеціальність 121</h3>
+                    <h1 class="specialty__title">Інженерія програмного забезпечення</h1>
+                    <hr>
+                    <p class="specialty__text">Сучасна спеціальність, орієнтована на розробку алгоритмічного та
+                        програмного
+                        забезпечення, яке
+                        задовольняє поставленим
+                        вимогам та побажанням замовника</p>
+                    <a class="main-btn" href="#">дізнатись більше</a>
+                    <div class="specialty__network">
+                        <div class="specialty__network-logo">
+                            <a class="facebook" href="#">
+                                <img class="" src="img/facebook.png" alt="facebook">
+                            </a>
+                        </div>
+                        <div class="specialty__network-logo">
+                            <a class="twiter" href="#">
+                                <img src="img/twiter.png" alt="twiter">
+                            </a>
+                        </div>
+                        <div class="specialty__network-logo">
+                            <a class="youtube" href="#">
+                                <img src="img/youtube 2.png" alt="youtube">
+                            </a>
+                        </div>
                     </div>
-                    <div class="network__logo">
-                        <a href="">
-                            <img class="twiter" src="img/twiter.png" alt="">
-                            <img src="img/Ellipse.png" alt="">
-                        </a>
+
+                </div>
+                <div class="specialty__photo">
+                    <div class="specialty__photo-box1">
+                        <img src="img/photo-left.png" alt="">
                     </div>
-                    <div class="network__logo">
-                        <a href="">
-                            <img class="youtube" src="img/youtube 2.png" alt="">
-                            <img src="img/Ellipse.png" alt="">
-                        </a>
+                    <div class="specialty__photo-box2">
+                        <div class="specialty__photo-top">
+                            <img src="img/photo-top.png" alt="">
+                        </div>
+                        <img src="img/photo-main.png" alt="">
+                        <div class="specialty__photo-bottom">
+                            <img src="img/photo-bottom.png" alt="">
+                            <img src="img/photo-bottom-main.png" alt="">
+                        </div>
                     </div>
+                    <div class="specialty__photo-box3">
+                        <img src="img/photo-right.png" alt="">
+
+                        <img src="img/photo-bottom-right.png" alt="">
+                    </div>
+                    <div class="vetor-graphics">
+                        <div class="circles">
+                            <img src="img/circles.svg" alt="">
+                        </div>
+                        <div class="arrows-up">
+                            <img src="img/arrows-up.svg" alt="">
+                        </div>
+                        <div class="vector">
+                            <img src="img/Vector.png" alt="">
+                        </div>
+                        <div class="vector2">
+                            <img src="img/Vector2.png" alt="">
+                        </div>
+                        <div class="ellipse3">
+                            <img src="img/Ellipse 3.png" alt="">
+                        </div>
+                        <div class="list-cream">
+                            <img src="img/list-cream.svg" alt="">
+                        </div>
+                        <div class="list-blue">
+                            <img src="img/list-blue.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="">
                 </div>
             </div>
-            <div class="photo-col">
-                <div id="photo1">
-                    <img src="img/Vector2.png" alt="">
-                    <img class="photo-border" src="img/photo-top.png" alt="">
-                </div>
-                <div id="photo2">
-                    <img class="photo-border" src="img/photo-left.png" alt="">
-                    <img src="img/photo-main.png" alt="">
-                </div>
-                <div id="photo3">
-                    <div>
-                        <img src="img/Vector.png" alt="">
-                        <img class="photo-border" src="img/photo-bottom.png" alt="">
-                    </div>
-                    <img class="photo-border" src="img/photo-bottom-main.png" alt="">
-                </div>
-            </div>
-            <div class="col-2">
-                <img class="photo-border" width="170px" src="img/photo-right.png" alt="">
-                <img class="photo-border" src="img/Ellipse 3.png" alt="">
-                <img class="photo-border" src="img/photo-bottom-right.png" alt="">
-            </div>
+        </div>
         </div>
     </section>
-    <section class="container specialty-info margin-80">
-        <h2>Чому інженерія програмного забезпечення?</h2>
-        <div class="vector">
-            <img src="img/Vector3.png" alt="">
-            <img src="img/Vector3.png" alt="">
-            <img src="img/Vector3.png" alt="">
-        </div>
-        <div class="row justify-content-between">
-            <div class="col-6">
+
+    <section class="specialty-choice">
+        <div class="container">
+            <div class="specialty-choice__left-box">
+                <h2 class="page-title">Чому інженерія програмного забезпечення?</h2>
+                <div class="element">
+                    <img src="img/Vector3.png" alt="">
+                    <img src="img/Vector3.png" alt="">
+                    <img src="img/Vector3.png" alt="">
+                </div>
                 <p>Програмна інженерія – сучасна спеціальність, орієнтована на розробку алгоритмічного та
                     програмного
                     забезпечення, яке задовольняє поставленим вимогам та побажанням замовника. Фахівці з програмної
                     інженерії практично є достатньо дефіцитними на ринку праці серед інших фахівців з інформаційних
                     технологій, оскільки ІТ-індустрія стрімко розвивається, що потребує постійного оновлення
                     кваліфікованого
-                    персоналу.</p>
+                    персоналу.
+                </p>
+                <img class="specialty-choice__left-img" src="img/tim-van-der-kuip-CPs2X8JYmS8-unsplash 1.png" alt="">
             </div>
-            <div class="col-5">
-                <img src="img/nicole.png" alt="">
-            </div>
-        </div>
-        <div class="row justify-content-between margin">
-            <div class="col-5 __photo">
-                <img src="img/tim-van-der-kuip-CPs2X8JYmS8-unsplash 1.png" alt="">
-            </div>
-            <div class="col-6">
+            <div class="specialty-choice__right-box">
+                <div class="specialty-choice__right-img">
+                    <img src="img/nicole.png" alt="">
+                    <img class="element-1" src="img/dots.svg" alt="">
+                </div>
                 <p>Освіта за напрямком Програмна інженерія базується на вивченні дисциплін фундаментальної та
                     професійної підготовки.
                     Студенти отримують математичні знання, вивчають сучасні мови програмування, тестування
                     програмного забезпечення,
-                    операційні системи, бази даних та інші дисципліни, необхідні для роботи за фахом.</p>
+                    операційні системи, бази даних та інші дисципліни, необхідні для роботи за фахом.
+                </p>
             </div>
         </div>
     </section>
-    <section class="container students margin-80">
-        <h2 class="padding-80">Кількість студентів</h2>
-        <div class="students-info">
-            <div>
-                <img src="img/Group 6.png" alt="">
-            </div>
-            <div>
-                <h6>1200</h6>
-                <h3>Випущенно</h3>
-            </div>
-            <div>
-                <img class="ellipse" src="img/Ellipse 13.png" alt="">
-            </div>
-            <div>
-                <img src="img/Group 5.png" alt="">
-            </div>
-            <div>
-                <h6>200<sup>+</sup></h6>
-                <h3>Навчається на курсі</h3>
-            </div>
-            <div>
-                <img class="ellipse" src="img/Ellipse 13.png" alt="">
-            </div>
-            <div>
-                <img src="img/Group 10.png" alt="">
-            </div>
-            <div>
-                <h6>150<sup>+</sup></h6>
-                <h3>Навчається на бютжеті</h3>
-            </div>
-        </div>
-    </section>
-    <section class="container study">
-        <h2 class="padding-80">Про навчання</h2>
-        <div class="row justify-content-between margin">
-            <div class="col-6">
-                <p>Навчання за спеціальністю121 «Інженерія програмного забезпечення» спланована так, що 2/3 часу
-                    підготовки відведено на
-                    лабораторно-практичне навчання, під час яких студенти набувають практичного досвіду застосування
-                    технологій
-                    проектування, програмування, налагодження, тестування програмних продуктів.</p>
-            </div>
-            <div class="col-5">
-                <img src="img/nicole-wolf-CZ9AjMGKIFI-unsplash 1.png" alt="">
-            </div>
-        </div>
-        <div class="row justify-content-between margin">
-            <div class="col-5 __photo">
-                <img src="img/nicole-wolf-CZ9AjMGKIFI-unsplash 2.png" alt="">
-            </div>
-            <div class="col-6">
-                <p>Студенти оволодівають мовами програмування, технологіями розробки програмних та інформаційних систем,
-                    СКБД, WEB-додатків
-                    та інші :С++, Assembler, C#, WPF, php, Java, JavaScript, ASP.NET MVC, MySql,ADO.NET, AJAX, Android
-                    SDK, 1C, HTML, MS SQL
-                    Server, CSS, Delphi, Object-oriented programming, Git, SQLLite, Subversion, Design Patterns.<br>
-                    Велика увага приділяється організації курсового та дипломного проектування. Студенти виконують
-                    проекти на замовлення
-                    роботодавців, тим самим демонструють свої знання, вміння та навики, чим сприяють подальшому
-                    самоствердженню та
-                    працевлаштуванню.</p>
-            </div>
-        </div>
-        <div class="row justify-content-between margin">
-            <div class="col-6">
-                <p>Регулярно проводяться конференції, екскурсії, зустрічі та майстер-класи на яких студенти можуть
-                    дізнатись про найновіші
-                    технології у сферах ІТ та розробки ПЗ від представників компаніїRexSoft, DataRobot, Massmedia Group,
-                    Clarity AG, JetUp
-                    digital, OT, Stfalcon, АудитСофт, AMC Bridge, Smile, Web-system.solution, Hexit digital.
-                    Найактивніші студенти можуть
-                    стати студентами-партнерами цих компанії і матимуть змогу проходити технологічну та переддипломну
-                    практики, приймати
-                    участь в окремих подіях компанії та виконувати реальні курсові та дипломні проекти, проходити
-                    стажування та бути
-                    працевлаштованим.</p>
-            </div>
-            <div class="col-5">
-                <img src="img/nicole-wolf-CZ9AjMGKIFI-unsplash 3.png" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="container partners">
-        <h2 class="padding-80">Наші партнери</h2>
-        <div class="partners-info">
-            <div>
-                <img src="img/right-arrow 3.png" alt="">
-            </div>
-            <div>
-                <img src="img/stfalcon_logo 1.png" alt="">
-            </div>
-            <div>
-                <img src="img/logo massmedia 1.png" alt="">
-            </div>
-            <div>
-                <img src="img/image 26.png" alt="">
-            </div>
-            <div>
-                <img src="img/image 27.png" alt="">
-            </div>
-            <div>
-                <img src="img/right-arrow 2.png" alt="">
-            </div>
 
+    <section class="students">
+        <div class="container">
+            <h2 class="page-title">Кількість студентів</h2>
+            <div class="students__info">
+                <div>
+                    <img src="img/Group 6.png" alt="">
+                </div>
+                <div>
+                    <h6>1200</h6>
+                    <h3>Випущенно</h3>
+                </div>
+                <div>
+                    <img class="element-2" src="img/Ellipse 13.png" alt="">
+                </div>
+                <div>
+                    <img src="img/Group 5.png" alt="">
+                </div>
+                <div>
+                    <h6>200<sup>+</sup></h6>
+                    <h3>Навчається на курсі</h3>
+                </div>
+                <div>
+                    <img class="element-2" src="img/Ellipse 13.png" alt="">
+                </div>
+                <div>
+                    <img src="img/Group 10.png" alt="">
+                </div>
+                <div>
+                    <h6>150<sup>+</sup></h6>
+                    <h3>Навчається на бютжеті</h3>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="container perspectives">
-        <h2 class="padding-80">Посади, на яких можуть працювати випускники спеціальності</h2>
-        <div class="row">
-            <div class="col-6">
-                <ul>
-                    <li>Фахівець з організації захисту інформації</li>
-                    <li>Проектувальник комп’ютерних систем та мереж</li>
-                    <li>Aдміністратор системи</li>
-                    <li>Aдміністратор доступу та баз данних</li>
-                    <li>Менеджер проектів</li>
-                </ul>
-            </div>
-            <div class="col-6">
-                <ul>
-                    <li>Проектувальник систем та засобів захисту інформації</li>
-                    <li>Фахівець з комп’ютерних комунікацій</li>
-                    <li>Прикладний програміст</li>
-                    <li>Системний програміст</li>
-                    <li>Тестувальник</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="container form-answers">
 
+    <section class="study">
+        <div class="container">
+            <h2 class="page-title">Про навчання</h2>
+            <div class="study__content">
+                <div class="study__design">
+                    <div class="arrows-right">
+                        <img src="/img/arrows-right.svg" alt="">
+                    </div>
+                    <div class="sticks">
+                        <img src="/img/sticks.svg" alt="">
+                    </div>
+                </div>
+                <div class="study__left-box">
+                    <p class="text1">Навчання за спеціальністю121 «Інженерія програмного забезпечення» спланована так,
+                        що 2/3 часу
+                        підготовки відведено на
+                        лабораторно-практичне навчання, під час яких студенти набувають практичного досвіду застосування
+                        технологій
+                        проектування, програмування, налагодження, тестування програмних продуктів.
+                    </p>
+                    <img class="photo1" src="img/nicole-wolf-CZ9AjMGKIFI-unsplash 2.png" alt="">
+                    <p class="text2">Регулярно проводяться конференції, екскурсії, зустрічі та майстер-класи на яких
+                        студенти можуть
+                        дізнатись про найновіші
+                        технології у сферах ІТ та розробки ПЗ від представників компаніїRexSoft, DataRobot, Massmedia
+                        Group,
+                        Clarity AG, JetUp
+                        digital, OT, Stfalcon, АудитСофт, AMC Bridge, Smile, Web-system.solution, Hexit digital.
+                        Найактивніші студенти можуть
+                        стати студентами-партнерами цих компанії і матимуть змогу проходити технологічну та
+                        переддипломну
+                        практики, приймати
+                        участь в окремих подіях компанії та виконувати реальні курсові та дипломні проекти, проходити
+                        стажування та бути
+                        працевлаштованим.
+                    </p>
+                </div>
+                <div class="study__right-box">
+                    <img class="photo2" src="img/nicole-wolf-CZ9AjMGKIFI-unsplash 1.png" alt="">
+                    <p class="text3">Студенти оволодівають мовами програмування, технологіями розробки програмних та
+                        інформаційних
+                        систем,
+                        СКБД, WEB-додатків
+                        та інші :С++, Assembler, C#, WPF, php, Java, JavaScript, ASP.NET MVC, MySql,ADO.NET, AJAX,
+                        Android
+                        SDK, 1C, HTML, MS SQL
+                        Server, CSS, Delphi, Object-oriented programming, Git, SQLLite, Subversion, Design Patterns.<br>
+                        Велика увага приділяється організації курсового та дипломного проектування. Студенти виконують
+                        проекти на замовлення
+                        роботодавців, тим самим демонструють свої знання, вміння та навики, чим сприяють подальшому
+                        самоствердженню та
+                        працевлаштуванню.
+                    </p>
+                    <img class="photo3" src="img/nicole-wolf-CZ9AjMGKIFI-unsplash 3.png" alt="">
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="partners">
+        <div class="container">
+            <div class="partners-box">
+                <h2 class="page-title">Наші партнери</h2>
+                <div class="partners__logo">
+                    <div class="arrow">
+                        <img src="img/right-arrow 2.png" alt="">
+                    </div>
+                    <div class="square stfalcon">
+                        <img src="img/stfalcon_logo 1.png" alt="">
+                    </div>
+                    <div class="square massmedia">
+                        <img src="img/logo massmedia 1.png" alt="">
+                    </div>
+                    <div class="square web-system">
+                        <img src="img/image 26.png" alt="">
+                    </div>
+                    <div class="square jet-up">
+                        <img src="img/image 27.png" alt="">
+                    </div>
+                    <div class="arrow">
+                        <img src="img/right-arrow 3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="perspectives">
+                <h2 class="page-title">Посади, на яких можуть працювати випускники спеціальності</h2>
+                <div class="perspectives__content">
+                    <div class="perspectives__element">
+                        <img src="/img/Group 22.svg" alt="">
+                    </div>
+                    <div class="perspectives__content-left">
+                        <ul>
+                            <li>Фахівець з організації захисту інформації</li>
+                            <li>Проектувальник комп’ютерних систем та мереж</li>
+                            <li>Aдміністратор системи</li>
+                            <li>Aдміністратор доступу та баз данних</li>
+                            <li>Менеджер проектів</li>
+                        </ul>
+                    </div>
+                    <div class="perspectives__content-right">
+                        <ul>
+                            <li>Проектувальник систем та засобів захисту інформації</li>
+                            <li>Фахівець з комп’ютерних комунікацій</li>
+                            <li>Прикладний програміст</li>
+                            <li>Системний програміст</li>
+                            <li>Тестувальник</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-answers">
+        <div class="container">
+            <h2 class="page-title">Ваші запитання</h2>
+            <h3>Якщо маєте запиання, заповніть будь-ласка форму</h3>
+            <div class="form-answers__input-wrapper">
+                <div>
+                    <div class="input-box">
+                        <div class="input-box__img-mail">
+                            <img src="/img/mail.png" alt="">
+                        </div>
+                        <div class="input-box__img-user">
+                            <img src="/img/user.png" alt="">
+                        </div>
+                        <div>
+                            <label for="">Ім’я</label>
+                            <div>
+                                <input class="form-answers__input" type="text" placeholder="Костянтин">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">E-mail</label>
+                            <div>
+                                <input class="form-answers__input" type="text" placeholder="you@gmail.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textarea-box">
+                        <div>
+                            <label for="">Ваше запитання</label>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Пишіть нам ось-тут..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-answers__btn">
+                <a class="main-btn" href="#">відправити</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="graduate">
+        <div class="container">
+            <h2 class="page-title">Випускники мають можливість продовжити навчання:</h2>
+            <div class="graduate__content">
+                <div class="graduate__left-box">
+                    <img class="graduate__img1" src="img/university-logo.png" alt="">
+                    <h3>В Національному університеті “Львівська політехніка”</h3>
+                    <p>За напрямком:“Комп’ютерні науки”, “Програмна інженерія” та “Комп’ютерна інженерія”.
+                    </p>
+                </div>
+                <div class="graduate__right-box">
+                    <img class="graduate__img2" src="img/university-logo2.png" alt="">
+                    <h3>В Хмельницькому Національному університеті</h3>
+                    <p>Та будь якому закладі вищої освіти за довільною спеціальністю галузі знань.
+                        Інформаційні технології за скороченим
+                        терміном навчання.
+                    </p>
+                </div>
+            </div>
+            <h2 class="page-title">Видатні випускники</h2>
+            <div class="graduate-slider">
+                <div class="graduate-item__wrapper">
+                    <img src="/img/graduate1.png" alt="">
+                    <h3>Костянтин Вознесенський</h3>
+                    <h3>Senior Developer</h3>
+                    <h5>ST Falcon Dev.studio</h5>
+                    <h5>Випускник 2019</h5>
+                </div>
+                <div class="graduate-item__wrapper">
+                    <img src="/img/graduate1.png" alt="">
+                    <h3>Костянтин Вознесенський</h3>
+                    <h3>Senior Developer</h3>
+                    <h5>ST Falcon Dev.studio</h5>
+                    <h5>Випускник 2019</h5>
+                </div>
+                <div class="graduate-item__wrapper">
+                    <img src="/img/graduate1.png" alt="">
+                    <h3>Костянтин Вознесенський</h3>
+                    <h3>Senior Developer</h3>
+                    <h5>ST Falcon Dev.studio</h5>
+                    <h5>Випускник 2019</h5>
+                </div>
+                <div class="graduate-item__wrapper">
+                    <img src="/img/graduate1.png" alt="">
+                    <h3>Костянтин Вознесенський</h3>
+                    <h3>Senior Developer</h3>
+                    <h5>ST Falcon Dev.studio</h5>
+                    <h5>Випускник 2019</h5>
+                </div>
+                <div class="graduate-item__wrapper">
+                    <img src="/img/graduate1.png" alt="">
+                    <h3>Костянтин Вознесенський</h3>
+                    <h3>Senior Developer</h3>
+                    <h5>ST Falcon Dev.studio</h5>
+                    <h5>Випускник 2019</h5>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
